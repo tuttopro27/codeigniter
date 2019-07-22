@@ -1,4 +1,4 @@
-<?php form_open("/codigofacilito/recibirdatos") ?>
+<?= form_open("/cursos/recibirdatos") ?>
 <?php
 	$nombre= array(
 		'name'=> 'nombre',
@@ -11,14 +11,14 @@
 ?>
 <label>
 	Nombre: 
-	<?php echo form_input($nombre) ?>
+	<?= form_input($nombre) ?>
 </label>
 <br>
 <label>
 	Numero de video: 
-	<?php echo form_input($videos) ?>
+	<?= form_input($videos) ?>
 </label>
-<?php echo form_submit('', 'subir curso') ?>
+<?= form_submit('', 'subir curso') ?>
 <?php form_close() ?>
 </body>
 </html>

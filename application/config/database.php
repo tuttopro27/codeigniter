@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+if (! defined('BASEPATH'))  exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -72,6 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
+$active_record =TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
@@ -81,8 +82,8 @@ $db['default'] = array(
 	'database' => 'codigofacilito',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'pconnect' => TRUE,
+	'db_debug' => TRUE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
